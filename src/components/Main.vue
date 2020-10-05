@@ -2,11 +2,11 @@
     <main>
         <div class="container">
             <div class="grid">
-                <Map />
+                <Map v-bind:counties="counties"/>
                 <div>
                     <Appinfo />     
                     <hr>
-                    <Levelcontent />
+                    <Levelcontent v-bind:levels="levels"/>
                 </div>
             </div>
         </div>
@@ -24,7 +24,8 @@ export default {
         Map,
         Appinfo,
         Levelcontent
-    }
+    },
+    props: ["levels", "counties"]
 }
 </script>
 

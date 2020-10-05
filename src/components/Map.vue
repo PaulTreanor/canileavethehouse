@@ -1,43 +1,20 @@
 <template>
     <div class="map">
-        <a id ="Monaghan" class="markers" href=""></a>
-        <a id ="Cavan" class="markers" href=""></a>
-        <a id="Donegal" class="markers" href=""></a>
+        <div v-bind:key="county.name" v-for="county in counties">
+            <County v-bind:county="county" />
 
-        <a id="Louth" class="markers" href=""></a>
-        <a id="Meath" class="markers" href=""></a>
-        <a id="Westmeath" class="markers" href=""></a>
-        <a id="Longford" class="markers" href=""></a>
-        <a id="Dublin" class="markers" href=""></a>
-        <a id="Offaly" class="markers" href=""></a>
-        <a id="Laois" class="markers" href=""></a>
-        <a id="Carlow" class="markers" href=""></a>
-        <a id="Kilkenny" class="markers" href=""></a>
-        <a id="Wexford" class="markers" href=""></a>
-        <a id="Wiclow" class="markers" href=""></a>
-        <a id="Kildare" class="markers" href=""></a>
-
-        <a id="Leitrim" class="markers" href=""></a>
-        <a id="Roscommon" class="markers" href=""></a>
-        <a id="Sligo" class="markers" href=""></a>
-        <a id="Mayo" class="markers" href=""></a>
-        <a id="Galway" class="markers" href=""></a>
-
-        <a id="Tipperary" class="markers" href=""></a>
-        <a id="Cork" class="markers" href=""></a>
-        <a id="Kerry" class="markers" href=""></a>
-        <a id="Limrick" class="markers" href=""></a>
-        <a id="Clare" class="markers" href=""></a>
-        <a id="Waterford" class="markers" href=""></a>
-        
-
-
+        </div>
     </div>
 </template>
 
 <script>
+import County from "./County"
 export default {
-    name: "Map"
+    name: "Map",
+    components : {
+        County
+    },
+    props: ["counties"]
 }
 </script>
 

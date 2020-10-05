@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Nav />
-    <Main />
+    <Main v-bind:levels="levels" v-bind:counties="counties"/>
   </div>
 </template>
 
@@ -21,38 +21,113 @@ export default {
         "level 1" : ["You can have up to 10 visitors from 3 households", "You can meet with up to 50 people outdoors", "You should work from home if possible", "Up to 100 people can attend weddings or funerals", "Pubs are open with restrictive measures"],
         "level 2" : ["You can have up to 6 visitors from 1 household", "You can meet with up to 15 people outdoors", "You should work from home if possible", "Up to 50 people can attend weddings or funerals", "Pubs are open with restrictive measures"]
         },
-      "counties" : {
-        "Monaghan" : "level 2",
-        "Cavan" : "level 2",
-        "Donegal" : "level 3",
-
-        "Roscommon" : "level 2",
-        "Leitrim" : "level 2",
-        "Sligo" : "level 2",
-        "Mayo" : "level 2",
-        "Galway" : "level 2",
-
-        "Louth" : "level 2",
-        "Dublin" : "level 3",
-        "Meath" : "level 2",
-        "Longford" : "level 2",
-        "Westmeath" : "level 2",
-        "Kildare" : "level 2",
-        "Offaly" : "level 2",
-        "Laois" : "level 2",
-        "Kilkenny" : "level 2",
-        "Wicklow" : "level 2",
-        "Carlow" : "level 2",
-        "Wexford" : "level 2",
-
-        "Cork" : "level 2",
-        "Limrick" : "level 2",
-        "Tipperary" : "level 2",
-        "Clare" : "level 2",
-        "Kerry" : "level 2",
-        "Waterford" : "level 2",
+      "counties" : [
+        {
+          "name" : "Monaghan",
+          "level" : "2"
+        },
+        {
+          "name" : "Cavan",
+          "level" : "2"
+        },
+        {
+          "name" : "Donegal",
+          "level" : "1"
+        },
+        {
+          "name" : "Roscommon",
+          "level" : "2"
+        },
+        {
+          "name" : "Leitrim",
+          "level" : "2"
+        },
+        {
+          "name" : "Sligo",
+          "level" : "2"
+        },
+        {
+          "name" : "Mayo",
+          "level" : "2"
+        },
         
-      }
+       {
+          "name" : "Galway",
+          "level" : "2"
+        },
+        {
+          "name" : "Louth",
+          "level" : "2"
+        },
+        {
+          "name" : "Dublin",
+          "level" : "1"  ///change this later
+        },
+        {
+          "name" : "Meath",
+          "level" : "2"
+        },
+        {
+          "name" : "Westmeath",
+          "level" : "2"
+        },
+        {
+          "name" : "Longford",
+          "level" : "2"
+        },
+        {
+          "name" : "Kildare",
+          "level" : "2"
+        },
+        {
+          "name" : "Offaly",
+          "level" : "2"
+        },
+        {
+          "name" : "Laois",
+          "level" : "2"
+        },
+        {
+          "name" : "Kilkenny",
+          "level" : "2"
+        },
+        {
+          "name" : "Wicklow",
+          "level" : "2"
+        },
+        {
+          "name" : "Wexford",
+          "level" : "2"
+        },
+        {
+          "name" : "Carlow",
+          "level" : "2"
+        },
+        {
+          "name" : "Cork",
+          "level" : "2"
+        },
+        {
+          "name" : "Limrick",
+          "level" : "2"
+        },
+        {
+          "name" : "Tipperary",
+          "level" : "2"
+        },
+        {
+          "name" : "Clare",
+          "level" : "2"
+        },
+        {
+          "name" : "Kerry",
+          "level" : "2"
+        },
+        {
+          "name" : "Waterford",
+          "level" : "2"
+        }
+      ]
     }
   }
 }
