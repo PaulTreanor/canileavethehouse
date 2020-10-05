@@ -14,6 +14,46 @@ export default {
   components: {
     Nav,
     Main
+  },
+  data : function() {
+     return {
+      "levels" : {
+        "level 1" : ["You can have up to 10 visitors from 3 households", "You can meet with up to 50 people outdoors", "You should work from home if possible", "Up to 100 people can attend weddings or funerals", "Pubs are open with restrictive measures"],
+        "level 2" : ["You can have up to 6 visitors from 1 household", "You can meet with up to 15 people outdoors", "You should work from home if possible", "Up to 50 people can attend weddings or funerals", "Pubs are open with restrictive measures"]
+        },
+      "counties" : {
+        "Monaghan" : "level 2",
+        "Cavan" : "level 2",
+        "Donegal" : "level 3",
+
+        "Roscommon" : "level 2",
+        "Leitrim" : "level 2",
+        "Sligo" : "level 2",
+        "Mayo" : "level 2",
+        "Galway" : "level 2",
+
+        "Louth" : "level 2",
+        "Dublin" : "level 3",
+        "Meath" : "level 2",
+        "Longford" : "level 2",
+        "Westmeath" : "level 2",
+        "Kildare" : "level 2",
+        "Offaly" : "level 2",
+        "Laois" : "level 2",
+        "Kilkenny" : "level 2",
+        "Wicklow" : "level 2",
+        "Carlow" : "level 2",
+        "Wexford" : "level 2",
+
+        "Cork" : "level 2",
+        "Limrick" : "level 2",
+        "Tipperary" : "level 2",
+        "Clare" : "level 2",
+        "Kerry" : "level 2",
+        "Waterford" : "level 2",
+        
+      }
+    }
   }
 }
 </script>
