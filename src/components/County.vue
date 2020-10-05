@@ -1,6 +1,6 @@
 <template>
-    <div :id="county.name" class="markers"></div>
-</template>
+    <div :id="county.name" v-on:click="$emit('active-county', county)" class="markers"></div>
+</template> 
 
 <script>
 export default {

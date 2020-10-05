@@ -17,10 +17,15 @@ export default {
   },
   data : function() {
      return {
-      "levels" : {
-        "level 1" : ["You can have up to 10 visitors from 3 households", "You can meet with up to 50 people outdoors", "You should work from home if possible", "Up to 100 people can attend weddings or funerals", "Pubs are open with restrictive measures"],
-        "level 2" : ["You can have up to 6 visitors from 1 household", "You can meet with up to 15 people outdoors", "You should work from home if possible", "Up to 50 people can attend weddings or funerals", "Pubs are open with restrictive measures"]
-        },
+      "levels" : [ {
+         "level": "1",
+         "details": ["You can have up to 10 visitors from 3 households", "You can meet with up to 50 people outdoors", "You should work from home if possible", "Up to 100 people can attend weddings or funerals", "Pubs are open with restrictive measures"]
+      },
+      {
+        "level": "2",
+        "details":["You can have up to 6 visitors from 1 household", "You can meet with up to 15 people outdoors", "You should work from home if possible", "Up to 50 people can attend weddings or funerals", "Pubs are open with restrictive measures"]
+      }
+      ],
       "counties" : [
         {
           "name" : "Monaghan",

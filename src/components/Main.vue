@@ -2,11 +2,11 @@
     <main>
         <div class="container">
             <div class="grid">
-                <Map v-bind:counties="counties"/>
+                <Map v-bind:counties="counties" v-on:active-county='activeCounty'/>
                 <div>
                     <Appinfo />     
                     <hr>
-                    <Levelcontent v-bind:levels="levels"/>
+                    <Levelcontent v-bind:levels='levels' v-bind:active_county="active_county" v-bind:counties="counties"/>
                 </div>
             </div>
         </div>
@@ -25,7 +25,17 @@ export default {
         Appinfo,
         Levelcontent
     },
-    props: ["levels", "counties"]
+    props: ["levels", "counties"],
+    data: function() {
+        return  {
+            "active_county": "Dublin"
+        }
+    },
+    methods: {
+        activeCounty(county) {
+            this.active_county = county.name
+        }
+    }
 }
 </script>
 

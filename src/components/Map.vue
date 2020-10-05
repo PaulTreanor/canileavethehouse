@@ -1,7 +1,7 @@
 <template>
     <div class="map">
         <div v-bind:key="county.name" v-for="county in counties">
-            <County v-bind:county="county" />
+            <County v-bind:county="county" v-on:active-county="$emit('active-county', county)"/>
 
         </div>
     </div>
@@ -54,7 +54,7 @@ export default {
     left: 80%;
 }
 
-#Wiclow{
+#Wicklow{
     top: 59%;
     left: 78%;
 }

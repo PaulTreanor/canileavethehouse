@@ -1,25 +1,30 @@
 <template>
     <div class="levelcontent">
-    <h2 class="county"> County Monaghan</h2>
-<h4>LEVEL 2</h4>
-<div class="levelinfo">
-    <p>Monaghan is currently under level 2 Covid restrictions.</p>
-    <p>This means that you can...</p>
-    <ul>
-        <li>Have up to six visitors from 1 other household.</li>
-        <li>Meet with up to 15 people outdoors.</li>
-        <li>You are recommended to work from home if possible.</li>
-        <li>Up to 50 people can attend weddings and funerals.</li>
-        <li>Bars are open with protective measures in place.</li>
-        <li>Discos, casinos, and nightclubs remain closed.</li>
-        <li>Schools and universities are open.</li>
-    </ul>
-</div>
+    <h2 class="county"> County {{active_county}}</h2>
+    <h4>LEVEL {{currentLevel}}</h4>
+    <Leveldetails v-bind:active_county="active_county" v-bind:currentLevel="currentLevel" v-bind:levels="levels"/>
 </div>
 </template>
 
 <script>
+import Leveldetails from './Leveldetails'
+
 export default {
-    name: "Levelcontent"
+    name: "Levelcontent",
+    components : {
+        Leveldetails
+    },
+    props: ["levels", "active_county", "counties"],
+    computed : {
+        currentLevel: function() {
+            var current_level = "0"
+            for (var i=0; i<26; i++){
+                if (this.active_county==this.counties[i].name) {
+                    current_level = this.counties[i].level
+                }
+            }
+            return current_level
+        }
+    }
 }
 </script>
