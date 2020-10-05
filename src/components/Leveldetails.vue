@@ -20,12 +20,11 @@ export default {
     computed : {
         levelDetails: function() {
             var level_details = []
-            for (var i=0; i<1; i++){
+            for (var i=0; i<=4; i++){
                 if (this.currentLevel==this.levels[i].level) {
                     level_details = this.levels[i].details
                 }
             }
-            level_details = this.levels[1].details
             return level_details
         }
     }

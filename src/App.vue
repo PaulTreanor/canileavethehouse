@@ -19,11 +19,23 @@ export default {
      return {
       "levels" : [ {
          "level": "1",
-         "details": ["You can have up to 10 visitors from 3 households", "You can meet with up to 50 people outdoors", "You should work from home if possible", "Up to 100 people can attend weddings or funerals", "Pubs are open with restrictive measures"]
+         "details": ["You can have up to 10 visitors from 3 households.", "You can meet with up to 50 people outdoors.", "You should work from home if possible.", "Up to 100 people can attend weddings or funerals.", "Pubs are open with restrictive measures."]
       },
       {
-        "level": "2",
-        "details":["You can have up to 6 visitors from 1 household", "You can meet with up to 15 people outdoors", "You should work from home if possible", "Up to 50 people can attend weddings or funerals", "Pubs are open with restrictive measures"]
+         "level": "2",
+         "details": ["You can have up to 6 visitors from 3 households.", "You can meet with up to 15 people outdoors.", "You should work from home if possible;.", "Up to 100 people can attend weddings or funerals.", "Pubs are open with restrictive measures."]
+      },
+      {
+        "level": "3",
+        "details":["You can only have up to 6 people in a household at once.", "You can meet with up to 15 people outdoors.", "You can only have visitors from 1 other household.", "You should work from home unless absolutely necessary.", "Up to 25 people can attend weddings or funerals.", "Pubs are open with restrictive measures."]
+      },
+      {
+        "level": "4",
+         "details": ["You can't have visitors to your house.", "You should stay in your county.",  "You can't meet with people outdoors.", "Only essential workers should go to work.", "Up to 6 people can attend weddings.", "Up to 25 mourners can attend funerals."]
+      },
+      {
+      "level": "5",
+         "details": ["You can't have visitors to your house.", "You can't meet with people outdoors.", "Stay within 5km of your house", "Only essential workers should go to work.", "Up to 6 people can attend weddings.", "Up to 10 mourners can attend funerals."]
       }
       ],
       "counties" : [
@@ -37,7 +49,7 @@ export default {
         },
         {
           "name" : "Donegal",
-          "level" : "1"
+          "level" : "3"
         },
         {
           "name" : "Roscommon",
@@ -66,7 +78,7 @@ export default {
         },
         {
           "name" : "Dublin",
-          "level" : "1"  ///change this later
+          "level" : "3"
         },
         {
           "name" : "Meath",
