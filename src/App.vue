@@ -112,10 +112,8 @@ nav {
 }
 
 
-#monaghan {
-    top: 30%;
-    left: 90%;
-}
+
+
 
 .markers:hover {
   background-image: url("./images/hover.png");
@@ -157,9 +155,32 @@ nav {
     }
 }
 
-  @media screen and (max-width: 500px) {
+
+
+  @media screen and (max-width: 600px) {
+    .map {   
+        max-height: 650px;
+    }
+    
+}
+
+ @media screen and (max-width: 500px) {
     .map {   
         max-height: 600px;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .map {   
+        max-height: 450px;
+    }
+    
+}
+
+@media screen and (max-width: 380px) {
+    .map {   
+        max-height: 430px;
     }
     
 }

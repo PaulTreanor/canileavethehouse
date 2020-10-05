@@ -4,19 +4,12 @@
             <div class="grid">
                 <Map />
                 <div>
-                    <Appinfo />
-                    
+                    <Appinfo />     
                     <hr>
-
                     <Levelcontent />
-                    
-                    
-
                 </div>
             </div>
-            
         </div>
-        
     </main>
 </template>
 
