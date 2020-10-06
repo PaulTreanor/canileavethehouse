@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <Nav />
-    <Main v-bind:levels="myJson.levels" v-bind:counties="myJson.counties"/>
+    <Main v-bind:levels="jsonData.levels" v-bind:counties="jsonData.counties"/>
   </div>
 </template>
 
 <script>
 import Nav from './components/Nav.vue'
 import Main from './components/Main.vue'
-import json from './data.json'
+import axios from 'axios';  
 
 export default {
   name: 'App',
@@ -18,8 +18,14 @@ export default {
   },
   data : function() {
      return {
-        myJson: json
-    }
+       jsonData : "json"
+     }
+  },
+  created() {
+    //api requests
+    axios.get('data.json')  //returns promise 
+      .then(res => this.jsonData = res.data)
+      .catch(err => console.log(err));
   }
 }
 </script>
@@ -32,6 +38,7 @@ body {
   color: #333;
   background-color: #c2eaef;
 }
+
 
 h1 {
   font-size: 200%;
