@@ -4,9 +4,9 @@
             <div class="grid">
                 <Map v-bind:counties="counties" v-on:active-county='activeCounty'/>
                 <div>
-                    <Appinfo />     
-                    <hr>
-                    <Levelcontent v-bind:levels='levels' v-bind:active_county="active_county" v-bind:counties="counties"/>
+                    <Levelcontent v-bind:levels='levels' v-bind:active_county="active_county" v-bind:counties="counties"/>     
+                    <hr />
+                    <Appinfo />
                 </div>
             </div>
         </div>

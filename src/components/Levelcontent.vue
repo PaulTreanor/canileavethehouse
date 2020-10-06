@@ -1,5 +1,6 @@
 <template>
     <div class="levelcontent">
+
     <h2 class="county"> County {{active_county}}</h2>
     <h4>LEVEL {{currentLevel}}</h4>
     <Leveldetails v-bind:active_county="active_county" v-bind:currentLevel="currentLevel" v-bind:levels="levels"/>

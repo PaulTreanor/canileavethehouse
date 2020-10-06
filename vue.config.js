@@ -1,9 +1,12 @@
 // vue.config.js
 module.exports = {
     // options...
-    devServer: {
-        proxy: 'http://paultreanor.com/'
-    }
     
-  }
-  
+    publicPath: "",
+    chainWebpack: config => {
+    config.plugin("html").tap(args => {
+        args[0].title = "My Vue App";
+        return args;
+    });
+}
+}

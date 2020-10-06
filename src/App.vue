@@ -2,19 +2,22 @@
   <div id="app">
     <Nav />
     <Main v-bind:levels="jsonData.levels" v-bind:counties="jsonData.counties"/>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Nav from './components/Nav.vue'
 import Main from './components/Main.vue'
+import Footer from './components/Footer.vue'
 import axios from 'axios';  
 
 export default {
   name: 'App',
   components: {
     Nav,
-    Main
+    Main,
+    Footer
   },
   data : function() {
      return {
@@ -31,12 +34,14 @@ export default {
 </script>
 
 <style>
+
 body {
   padding: 0;
   margin: 0;
   font-family: "inter", sans-serif;
   color: #333;
   background-color: #c2eaef;
+  
 }
 
 
@@ -198,13 +203,6 @@ nav {
     
 }
 
-footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 25px;
-    text-align: center;
-    background-color:#c2eaef;
-}
 
 /* covid level info */
 .level {
