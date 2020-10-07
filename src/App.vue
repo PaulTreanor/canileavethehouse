@@ -40,8 +40,7 @@ body {
   margin: 0;
   font-family: "inter", sans-serif;
   color: #333;
-  background-color: #c2eaef;
-  
+  background-color: rgb(249,249,250);
 }
 
 
@@ -102,7 +101,7 @@ nav {
 
 .map {
     position: relative;
-    background-image: url("./images/ireland.png"); 
+    background-image: url("./images/ireland2.png"); 
     background-repeat: no-repeat;
     background-size: contains;  /*contains auto*/ 
     display: block;
