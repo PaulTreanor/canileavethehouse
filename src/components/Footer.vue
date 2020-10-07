@@ -2,7 +2,7 @@
     <footer>
         <div class="container">
             
-            <p>Disclaimer: The information in this website might be wrong...</p>
+            <p>Disclaimer: The information included in this website may not be fully up to date or accurate, although I try my best.</p>
             <a href="https://www.gov.ie/en/campaigns/resilience-recovery-2020-2021-plan-for-living-with-covid-19/">Source of restriction information.</a>
         </div>
         
