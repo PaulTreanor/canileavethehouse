@@ -1,24 +1,3 @@
 # canileavethehouse
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+A little Vue.js mobile friendly webapp to help people keep up to date with the covid restrictions in their area. 
