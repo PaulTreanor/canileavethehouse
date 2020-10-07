@@ -9,7 +9,7 @@
     },
     {
       "level": "3",
-      "details":["You can only have up to 6 people in a household at once.", "You can meet with up to 15 people outdoors.", "You can only have visitors from 1 other household.", "You should work from home unless absolutely necessary.", "Up to 25 people can attend weddings or funerals.", "Pubs are open with restrictive measures."]
+      "details":["You can only have up to 6 people in a household at once.", "Organised outdoor gatherings are limited to 15 people.", "You can only have visitors from 1 other household.", "You should work from home unless absolutely necessary.", "Up to 25 people can attend weddings or funerals.", "Pubs are open with restrictive measures."]
     },
     {
       "level": "4",
@@ -23,11 +23,11 @@
     "counties" : [
       {
         "name" : "Monaghan",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Cavan",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Donegal",
@@ -35,28 +35,28 @@
       },
       {
         "name" : "Roscommon",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Leitrim",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Sligo",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Mayo",
-        "level" : "2"
+        "level" : "3"
       },
       
      {
         "name" : "Galway",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Louth",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Dublin",
@@ -64,67 +64,67 @@
       },
       {
         "name" : "Meath",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Westmeath",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Longford",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Kildare",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Offaly",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Laois",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Kilkenny",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Wicklow",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Wexford",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Carlow",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Cork",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Limrick",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Tipperary",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Clare",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Kerry",
-        "level" : "2"
+        "level" : "3"
       },
       {
         "name" : "Waterford",
-        "level" : "2"
+        "level" : "3"
       }
     ]
   }

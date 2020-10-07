@@ -69,8 +69,6 @@ nav {
 .navbar {
     text-align: center;
     padding-top: 20px;
-    border-bottom: solid;
-    border-color: #aee3ea;
 }
 
 .container {
@@ -157,7 +155,7 @@ nav {
     grid-row: auto;
   }
   .map {
-      width: 100vw;
+      width: 90vw;
       background-size: 100% auto;
       max-height: 800px;
   }
@@ -182,26 +180,54 @@ nav {
     
 }
 
+@media screen and (max-width: 550px) {
+    .map {   
+        max-height: 560px;
+    }
+    
+}
+
  @media screen and (max-width: 500px) {
     .map {   
-        max-height: 600px;
+        max-height: 540px;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .map {   
+        max-height: 500px;
+    }
+    
+}
+@media screen and (max-width: 440px) {
+    .map {   
+        max-height: 440px;
     }
     
 }
 
 @media screen and (max-width: 400px) {
     .map {   
-        max-height: 450px;
+        max-height: 420px;
     }
     
 }
 
 @media screen and (max-width: 380px) {
     .map {   
-        max-height: 430px;
+        max-height: 400px;
     }
     
 }
+
+
+@media screen and (max-width: 350px) {
+    .map {   
+        max-height: 350px;
+    }
+    
+}
+
 
 
 /* covid level info */
