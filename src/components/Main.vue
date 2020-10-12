@@ -28,7 +28,7 @@ export default {
     props: ["levels", "counties"],
     data: function() {
         return  {
-            "active_county": "Dublin"
+            "active_county": ""
         }
     },
     methods: {
